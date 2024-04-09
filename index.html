@@ -4,7 +4,7 @@
     <title>Contador</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="light-theme">
     <h1 class="counter">Contador</h1>
     <p class="description">Este é um contador simples. Use os botões "Aumentar", "Diminuir" e "Reset" para alterar o valor do contador.</p>
     <div id="contador" class="counter value">0</div>
@@ -17,10 +17,13 @@
             <ul id="listaHistorico"></ul>
         </div>
     </div>
-    <script src="script.js"></script>
-
-    <footer style="height: 50px; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center;">
+    <label id="toggleTheme" class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <footer>
         <p>Contador kiki 2024</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

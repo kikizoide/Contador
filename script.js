@@ -54,3 +54,14 @@ document.addEventListener('scroll', function(event) {
         event.preventDefault(); // Previne o comportamento padrão do evento de rolagem
     }
 });
+
+document.querySelector('#toggleTheme input[type="checkbox"]').addEventListener('change', function() {
+    var body = document.body;
+    if (body.classList.contains('light-theme')) {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+    } else {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+    }
+});

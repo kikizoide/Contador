@@ -85,3 +85,122 @@ body {
 .history li:hover {
     background-color: #f0f0f0; /* Altera a cor de fundo quando o mouse passa por cima */
 }
+
+.footer {
+    margin-top: auto; /* Alinha o rodapé na parte inferior da página */
+    text-align: center;
+    color: #666;
+}
+
+/* Estilos para o tema claro */
+body.light-theme {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+body.light-theme .history li {
+    border-bottom: 1px solid #ddd;
+    color: #666;
+}
+
+body.light-theme .history li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para o tema escuro */
+body.dark-theme {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+body.dark-theme h1 {
+    color: #f4f4f9;
+}
+
+body.dark-theme p {
+    color: #f4f4f9;
+}
+
+body.dark-theme .history {
+    background-color: #555;
+    color: #f4f4f9;
+    border: 1px solid #f4f4f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-theme .history h2 {
+    color: #f4f4f9;
+}
+
+body.dark-theme .history li {
+    border-bottom: 1px solid #ddd;
+    color: #f4f4f9;
+}
+
+body.dark-theme .history li:hover {
+    background-color: #777;
+}
+
+body.dark-theme .counter.value {
+    color: #f4f4f9;
+}
+
+body.dark-theme footer {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+/* Estilos para o botão de alternar tema */
+#toggleTheme {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+#toggleTheme input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#toggleTheme span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+#toggleTheme span:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+#toggleTheme input:checked + span {
+    background-color: #2196F3;
+}
+
+#toggleTheme input:checked + span:before {
+    transform: translateX(26px);
+}
+
+body.dark-theme #toggleTheme span {
+    background-color: #333;
+}
+
+body.dark-theme #toggleTheme input:checked + span {
+    background-color: #2196F3;
+}
