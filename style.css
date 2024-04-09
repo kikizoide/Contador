@@ -1,0 +1,39 @@
+/* style.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.counter {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+#contador {
+    margin: 20px;
+    font-weight: bold;
+}
+
+.button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
