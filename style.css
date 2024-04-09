@@ -3,11 +3,11 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: start; /* Alinha os itens ao topo */
+    justify-content: start;
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 20px; /* Adiciona algum espaço ao redor do corpo */
+    padding: 20px;
     background-color: #f4f4f9;
     font-family: Arial, sans-serif;
 }
