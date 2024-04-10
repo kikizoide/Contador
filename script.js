@@ -65,3 +65,55 @@ document.querySelector('#toggleTheme input[type="checkbox"]').addEventListener('
         body.classList.add('light-theme');
     }
 });
+
+document.getElementById('addCounter').addEventListener('click', function() {
+    createCounter();
+});
+
+function createCounter() {
+    var counterContainer = document.createElement('div');
+    var counterValue = document.createElement('div');
+    var increaseButton = document.createElement('button');
+    var decreaseButton = document.createElement('button');
+    var resetButton = document.createElement('button');
+    var deleteButton = document.createElement('button');
+
+    deleteButton.classList.add('counter', 'button');
+    deleteButton.textContent = 'Excluir';
+
+    deleteButton.addEventListener('click', function() {
+        counterContainer.remove();
+    });
+
+    counterContainer.appendChild(deleteButton);
+
+    counterContainer.classList.add('counter', 'added-counter');
+    counterValue.classList.add('counter', 'value');
+    increaseButton.classList.add('counter', 'button');
+    decreaseButton.classList.add('counter', 'button');
+    resetButton.classList.add('counter', 'button');
+
+    counterValue.textContent = '0';
+    increaseButton.textContent = 'Aumentar';
+    decreaseButton.textContent = 'Diminuir';
+    resetButton.textContent = 'Reset';
+
+    increaseButton.addEventListener('click', function() {
+        counterValue.textContent = parseInt(counterValue.textContent) + 1;
+    });
+
+    decreaseButton.addEventListener('click', function() {
+        counterValue.textContent = parseInt(counterValue.textContent) - 1;
+    });
+
+    resetButton.addEventListener('click', function() {
+        counterValue.textContent = '0';
+    });
+
+    counterContainer.appendChild(counterValue);
+    counterContainer.appendChild(increaseButton);
+    counterContainer.appendChild(decreaseButton);
+    counterContainer.appendChild(resetButton);
+
+    document.getElementById('countersContainer').appendChild(counterContainer);
+}

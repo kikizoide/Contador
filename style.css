@@ -12,10 +12,37 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.counter {
-    text-align: center;
-    font-size: 2em;
-    color: #333;
+.original-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.added-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.added-counter .value {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.added-counter .button {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .description {
